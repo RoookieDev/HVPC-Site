@@ -1,0 +1,95 @@
+<section class="corporate-reviews py-5">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-end mb-4">
+            <div>
+                <span class="small text-uppercase font-weight-bold">OUR REVIEWS</span>
+                <h2 class="display-4 font-weight-bold">
+                    What Our <span class="text-muted">Clients</span> Say
+                </h2>
+            </div>
+
+            <div class="nav-arrows">
+                <button onclick="prevSlide()" class="btn btn-dark rounded-circle mr-2">
+                    <span class="iconify" data-icon="ph:arrow-left"></span>
+                </button>
+                <button onclick="nextSlide()" class="btn btn-dark rounded-circle">
+                    <span class="iconify" data-icon="ph:arrow-right"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- EMPTY container -->
+        <div class="rows"></div>
+
+    </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const sliderCon = document.querySelector(".corporate-reviews .rows");
+
+    fetch("assets/js/feedback.json")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("JSON not found. Check path.");
+            }
+            return response.json();
+        })
+        .then(data => {
+
+            data.forEach(user => {
+
+                const item = document.createElement("div");
+                item.classList.add("item");
+
+                item.innerHTML = `
+                    <div class="card review-card shadow-sm border-0 p-4">
+                        <div class="d-flex justify-content-between mb-4">
+                            <img 
+                                style="width:100px;height:100px;object-fit:cover;"
+                                src="${user.image}" 
+                                class="rounded-circle thumb"
+                                alt="${user.name}">
+                        </div>
+
+                        <span class="iconify text-primary mb-3"
+                            data-icon="ph:quotes-fill"
+                            data-width="30"></span>
+
+                        <h4 class="card-text font-weight-bold">
+                            ${user.feedback}
+                        </h4>
+
+                        <div class="mt-5">
+                            <strong>${user.name}</strong><br>
+                            <small class="text-muted">
+                                ${user.position}, ${user.company}
+                            </small>
+                        </div>
+                    </div>
+                `;
+
+                sliderCon.appendChild(item);
+            });
+
+        })
+        .catch(error => console.error(error));
+});
+
+
+function nextSlide() {
+    const sliderCon = document.querySelector(".corporate-reviews .rows");
+    const card = document.querySelector(".corporate-reviews .item");
+    if (!card) return;
+    sliderCon.scrollLeft += card.clientWidth;
+}
+
+function prevSlide() {
+    const sliderCon = document.querySelector(".corporate-reviews .rows");
+    const card = document.querySelector(".corporate-reviews .item");
+    if (!card) return;
+    sliderCon.scrollLeft -= card.clientWidth;
+}
+</script>

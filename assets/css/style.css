@@ -92,7 +92,7 @@ a:hover {
 }
 
 .btn-gold:hover {
-    background-color: transparent;
+    background-color: white;
     color: var(--color-gold);
     box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
 }
@@ -188,7 +188,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../img/hall_5.webp') center center/cover no-repeat;
+    background: url('../img/bg.jpg') center center/cover no-repeat;
 }
 
 .hero-overlay {
@@ -209,7 +209,7 @@ a:hover {
 .hero-title {
     font-size: 5rem;
     font-style: italic;
-    color: var(--color-gold);
+    color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     margin-bottom: 20px;
 }
@@ -246,11 +246,6 @@ a:hover {
 }
 
 /* --- Services Section --- */
-body {
-    font-family: 'Lato', sans-serif;
-    color: #666;
-}
-
 .services-section {
     background-color: #ffeee3; /* Soft mint background */
     padding: 80px 0;
@@ -385,6 +380,38 @@ body {
 
 .gallery-item:hover .gallery-overlay span {
     transform: translateY(0);
+}
+
+/* testimonial Styling*/
+.corporate-reviews .container .rows{
+    position: relative; 
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: 0.5s ease;
+    gap: 15px;
+}
+.corporate-reviews .container .rows .item{
+    position: relative;
+    min-width: 400px;
+    height: auto;
+}
+.corporate-reviews .container .rows .item .review-card{
+    height: 100%;
+}
+.corporate-reviews .container .nav-arrows{
+    display: flex;
+}
+.corporate-reviews .container .nav-arrows button{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
 }
 
 /* --- Booking Form --- */

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Riya & Kunal",
+    "position": "Bride & Groom",
+    "company": "Destination Wedding",
+    "feedback": "Our dream wedding became a reality because of their flawless planning and attention to detail. Every moment was magical and stress-free.",
+    "image": "https://randomuser.me/api/portraits/women/51.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Ananya Sharma",
+    "position": "Bride",
+    "company": "Royal Palace Wedding",
+    "feedback": "From decor to coordination, everything was perfectly managed. I enjoyed my big day without worrying about anything.",
+    "image": "https://randomuser.me/api/portraits/women/52.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Vikram Singh",
+    "position": "Groom",
+    "company": "Traditional Ceremony",
+    "feedback": "They handled every function with professionalism and creativity. Guests are still praising the arrangements!",
+    "image": "https://randomuser.me/api/portraits/men/53.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Meera & Arjun",
+    "position": "Couple",
+    "company": "Beach Wedding",
+    "feedback": "The décor, music, and hospitality were beyond our expectations. Truly a fairy-tale experience.",
+    "image": "https://randomuser.me/api/portraits/women/54.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Pooja Mehta",
+    "position": "Bride",
+    "company": "Luxury Wedding",
+    "feedback": "They understood our vision and turned it into something even more beautiful than we imagined.",
+    "image": "https://randomuser.me/api/portraits/women/55.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Rahul Verma",
+    "position": "Groom",
+    "company": "Grand Reception",
+    "feedback": "Excellent coordination and time management. Every event started and ended perfectly on schedule.",
+    "image": "https://randomuser.me/api/portraits/men/56.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Sneha Kapoor",
+    "position": "Bride",
+    "company": "Garden Wedding",
+    "feedback": "Their creativity and dedication made our wedding unforgettable. Highly recommended!",
+    "image": "https://randomuser.me/api/portraits/women/57.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Amit & Neha",
+    "position": "Couple",
+    "company": "Destination Udaipur Wedding",
+    "feedback": "Planning a destination wedding felt easy with them. They managed vendors and guests flawlessly.",
+    "image": "https://randomuser.me/api/portraits/men/58.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Ishita Rao",
+    "position": "Bride",
+    "company": "Traditional South Indian Wedding",
+    "feedback": "They respected every tradition while adding a modern touch. Everything was beautifully executed.",
+    "image": "https://randomuser.me/api/portraits/women/59.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Karan Malhotra",
+    "position": "Groom",
+    "company": "Royal Heritage Wedding",
+    "feedback": "Their team handled everything smoothly, from invitations to the final farewell ceremony.",
+    "image": "https://randomuser.me/api/portraits/men/60.jpg"
+  }
+]

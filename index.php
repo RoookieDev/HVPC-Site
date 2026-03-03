@@ -121,54 +121,17 @@ include "includes/header.php";
 </section>
 
 
-<!-- Testimonial Section -->
- <section class="testimonial-section py-5">
-    <div class="container">
-        <div id="testimonialSlider" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators custom-indicators">
-                <li data-target="#testimonialSlider" data-slide-to="0" class="active"></li>
-                <li data-target="#testimonialSlider" data-slide-to="1"></li>
-                <li data-target="#testimonialSlider" data-slide-to="2"></li>
-            </ol>
+<!-- slider start here-->
+ <?php include "includes/slider_container.html";?>
+<!-- slider end here -->
 
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 text-center position-relative">
-                            <div class="floral-frame">
-                                <img src="couple-image.jpg" alt="Wedding Couple" class="main-img">
-                                <div class="leaves-overlay"></div>
-                            </div>
-                        </div>
+<!-- features start here-->
+ <?php include "includes/features.html";?>
+<!-- features end here -->
 
-                        <div class="col-md-6 content-col">
-                            <h5 class="sub-heading">WHAT OUR CLIENT SAY</h5>
-                            <div class="quote-header">
-                                <span class="iconify quote-icon" data-icon="ph:quotes-light"></span>
-                                <span class="header-line"></span>
-                            </div>
-                            <p class="testimonial-text">
-                                This is not only a wedding planning agency but also a dreamy friend. 
-                                I am very glad to work with them. They make my dream come true. 
-                                In my wedding I found them as my best friends.
-                            </p>
-                            
-                            <div class="client-info d-flex align-items-center">
-                                <div class="client-avatar">
-                                    <img src="client-thumb.jpg" alt="Jenefer Marvella">
-                                </div>
-                                <div class="client-details ml-3">
-                                    <h6>Jenefer Marvella</h6>
-                                    <span>Wedding 12/12/19</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-        </div>
-    </div>
-</section>
+<!-- testimonial start here-->
+ <?php include "includes/testimonial.html";?>
+<!-- testimonial end here -->
 
 
     <!-- Gallery Section -->

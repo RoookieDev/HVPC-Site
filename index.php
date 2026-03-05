@@ -129,40 +129,20 @@ include "includes/header.php";
  <?php include "includes/features.html";?>
 <!-- features end here -->
 
+<!-- Gallery start here -->
+ <?php
+ include "includes/gallery.html"
+ ?>
+<!-- Gallery end here -->
+
+
+
 <!-- testimonial start here-->
  <?php include "includes/testimonial.html";?>
 <!-- testimonial end here -->
 
-
-    <!-- Gallery Section -->
-    <section class="gallery section-padding" id="gallery">
-        <div class="container">
-            <h2 class="section-title text-center reveal">Glimpses of Luxury</h2>
-            <div class="row mt-5">
-                <div class="col-md-4 mb-4 reveal">
-                    <div class="gallery-item">
-                        <img src="assets/img/hall_1.webp" alt="Banquet Hall Interior" class="img-fluid">
-                        <div class="gallery-overlay"><span>The Grand Hall</span></div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 reveal" style="transition-delay: 0.2s;">
-                    <div class="gallery-item">
-                        <img src="assets/img/chair.webp" alt="Wedding Decor" class="img-fluid">
-                        <div class="gallery-overlay"><span>Floral Elegance</span></div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 reveal" style="transition-delay: 0.4s;">
-                    <div class="gallery-item">
-                        <img src="assets/img/food.jpg" alt="Gourmet Catering" class="img-fluid">
-                        <div class="gallery-overlay"><span>Culinary Excellence</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Booking Section -->
-    <section class="booking section-padding bg-dark-tone" id="booking">
+<!-- Booking Section -->
+<section class="booking section-padding bg-dark-tone" id="booking">
         <div class="container reveal">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
@@ -205,10 +185,11 @@ include "includes/header.php";
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
-    <?php
+<?php
     include "includes/footer.php";
     ?>
+    
 
    

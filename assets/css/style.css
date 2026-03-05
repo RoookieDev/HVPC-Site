@@ -154,6 +154,7 @@ a:hover {
 
 .custom-nav .nav-link:hover {
     color: var(--color-gold) !important;
+    background: white;
 }
 
 .custom-nav.scrolled .nav-link {
@@ -383,6 +384,9 @@ a:hover {
 }
 
 /* testimonial Styling*/
+.corporate-reviews{
+    padding: 60px 20px;
+}
 .corporate-reviews .container .rows{
     position: relative; 
     width: 100%;
